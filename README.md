@@ -1,27 +1,41 @@
 # Companion
 
+# Tracker
+
+APP de Geolocalización en tiempo real y guardado de coordenadas en firebase para seguimiento en un mapa.
+
+
+Esta app trabaja en conjunto con la app para móvil tracker-ionic que se encuentra en este mismo repositorio y que muestra en tiempo real en un mapa la geo localización de los dispositivos conectados a la base de datos.
+
+Podrá seguir en tiempo real a cualquier dispositivo simplemente seleccionandolo en el lado izquierdo del mapa.
+
+
+Necesita una api key de google maps que podrá encontrar en la web (https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en#key)
+
+Cuando tenga esa API KEY copiela y peguela en el archivo : src/app/app.module.ts  linea: 22
+
+Pegue las mismas credenciales que ha creado para la APP Tracker-Ionic de este mismo repositorio. Copie y pegue esas credenciales en: src/config/firebase.config.ts linea 2 a 7.
+
+
+Navegue en su consola a la carpeta de este proyecto e instale las dependencias
+
+```
+npm install
+
+```
+
+Cuando termine de instalar las dependencias escriba el comando
+
+```
+ng serve
+
+```
+
+Para arrancar el proyecto.
+
+
+Abra su navegador en localhost:4200
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
